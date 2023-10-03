@@ -4,12 +4,21 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="POSNWindows"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-10-03 02:28:06 PM"/>
+        <attribute name="saved" value="2023-10-03 02:31:47 PM"/>
         <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjoyODowMyBQTTszMjEy"/>
-        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjoyODowNiBQTTsxOzMzMjM="/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjozMTo0NyBQTTsyOzMzMjM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="a, b, c, sum" type="Real" array="False" size=""/>
+            <assign variable="c" expression="10"/>
+            <output expression="&quot;Enter Num A&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter Num B&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="sum" expression="(5*(a-b))/c"/>
+            <output expression="&quot;Total SUM = &quot; &amp; sum" newline="True"/>
+        </body>
     </function>
 </flowgorithm>
