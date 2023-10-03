@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 02:36:46 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjozMjozMiBQTTszMjA5"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjozNjo0NiBQTTsxOzMzMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name, lastName, number, class" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Name :&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter Last Name :&quot;" newline="True"/>
+            <input variable="lastName"/>
+            <output expression="&quot;Enter No :&quot;" newline="True"/>
+            <input variable="number"/>
+            <output expression="&quot;Enter Class :&quot;" newline="True"/>
+            <input variable="class"/>
+            <output expression="&quot;Welcome : &quot; &amp; name &amp; &quot; &quot; &amp; lastName &amp; &quot; No. &quot; &amp; number &amp; &quot; Class. &quot; &amp; class" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
