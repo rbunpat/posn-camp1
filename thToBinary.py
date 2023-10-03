@@ -1,8 +1,9 @@
 def text_to_binary(text):
     binary_result = ""
     for char in text:
-        ascii_value = ord(char)
-        binary_value = bin(ascii_value)[2:]  # Convert to binary and remove the '0b' prefix
+        # Encode the character as bytes using UTF-8 encoding
+        byte_data = char.encode('utf-8')
+        binary_value = ' '.join(format(byte, '08b') for byte in byte_data)
         binary_result += binary_value + ' '
 
     return binary_result.strip()  # Remove trailing space
