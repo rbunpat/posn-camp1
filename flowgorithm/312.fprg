@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 04:21:45 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswNDoxNzozNyBQTTszMjE5"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswNDoyMTo0NSBQTTsxOzMzMjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3611;&#3657;&#3629;&#3609;&#3649;&#3617;&#3656;&#3626;&#3641;&#3605;&#3619;&#3588;&#3641;&#3603;&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="12" direction="inc" step="1">
+                <output expression="n &amp; &quot; x &quot; &amp; i &amp; &quot; = &quot; &amp; n * i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

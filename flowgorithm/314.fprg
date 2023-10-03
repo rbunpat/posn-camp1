@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 04:29:07 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswNDoyNTozOCBQTTszMjE5"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswNDoyOTowNyBQTTsxOzMzMjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totalNum, inputNum" type="Integer" array="False" size=""/>
+            <assign variable="totalNum" expression="0"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3611;&#3657;&#3629;&#3609;&#3605;&#3633;&#3623;&#3648;&#3621;&#3586;&quot;" newline="True"/>
+            <while expression="totalNum &lt; 100">
+                <input variable="inputNum"/>
+                <assign variable="totalNum" expression="totalNum + inputNum"/>
+                <output expression="totalNum" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 04:25:25 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswNDoyMTo1NCBQTTszMjEz"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswNDoyNToyNSBQTTsxOzMzMjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inputNum, totalNum, i" type="Real" array="False" size=""/>
+            <assign variable="totalNum" expression="0"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3611;&#3657;&#3629;&#3609;&#3605;&#3633;&#3623;&#3648;&#3621;&#3586;&quot;" newline="True"/>
+            <for variable="i" start="1" end="4" direction="inc" step="1">
+                <input variable="inputNum"/>
+                <assign variable="totalNum" expression="totalNum - inputNum"/>
+            </for>
+            <output expression="&quot;Total = &quot; &amp; totalNum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
