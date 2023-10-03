@@ -4,12 +4,20 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="POSNWindows"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-10-03 02:22:51 PM"/>
+        <attribute name="saved" value="2023-10-03 02:27:49 PM"/>
         <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjoyMjozOSBQTTszMjE1"/>
-        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjoyMjo1MSBQTTsxOzMzMTc="/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjoyNzo0OSBQTTsyOzMzMzA="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="weight, height, bmi" type="Real" array="False" size=""/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3611;&#3657;&#3629;&#3609;&#3609;&#3657;&#3635;&#3627;&#3609;&#3633;&#3585;&#3586;&#3629;&#3591;&#3588;&#3640;&#3603;&quot;" newline="True"/>
+            <input variable="weight"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3611;&#3657;&#3629;&#3609;&#3626;&#3656;&#3623;&#3609;&#3626;&#3641;&#3591;&#3586;&#3629;&#3591;&#3588;&#3640;&#3603;&quot;" newline="True"/>
+            <input variable="height"/>
+            <assign variable="bmi" expression="(weight/((height/100)*(height/100)))"/>
+            <output expression="bmi" newline="True"/>
+        </body>
     </function>
 </flowgorithm>
