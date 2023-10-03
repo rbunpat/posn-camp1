@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 04:10:21 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswNDowMzozMiBQTTszMjA5"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswNDoxMDoyMSBQTTsxOzMzMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price, discount, calculatedDiscount" type="Integer" array="False" size=""/>
+            <input variable="price"/>
+            <if expression="price &gt; 4000">
+                <then>
+                    <assign variable="discount" expression="10"/>
+                    <assign variable="calculatedDiscount" expression="(price*discount)/100"/>
+                    <output expression="&quot;&#3588;&#3640;&#3603;&#3652;&#3604;&#3657;&#3619;&#3633;&#3610;&#3626;&#3656;&#3623;&#3609;&#3621;&#3604; &quot; &amp; discount &amp; &quot;% &#3588;&#3636;&#3604;&#3648;&#3611;&#3655;&#3609;&#3648;&#3591;&#3636;&#3609;&#3592;&#3635;&#3609;&#3623;&#3609; = &quot; &amp; calculatedDiscount" newline="True"/>
+                </then>
+                <else>
+                    <if expression="price &gt; 2000">
+                        <then>
+                            <assign variable="discount" expression="8"/>
+                            <assign variable="calculatedDiscount" expression="(price*discount)/100"/>
+                            <output expression="&quot;&#3588;&#3640;&#3603;&#3652;&#3604;&#3657;&#3619;&#3633;&#3610;&#3626;&#3656;&#3623;&#3609;&#3621;&#3604; &quot; &amp; discount &amp; &quot;% &#3588;&#3636;&#3604;&#3648;&#3611;&#3655;&#3609;&#3648;&#3591;&#3636;&#3609;&#3592;&#3635;&#3609;&#3623;&#3609; = &quot; &amp; calculatedDiscount" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="price &gt; 999">
+                                <then>
+                                    <assign variable="discount" expression="5"/>
+                                    <assign variable="calculatedDiscount" expression="(price*discount)/100"/>
+                                    <output expression="&quot;&#3588;&#3640;&#3603;&#3652;&#3604;&#3657;&#3619;&#3633;&#3610;&#3626;&#3656;&#3623;&#3609;&#3621;&#3604; &quot; &amp; discount &amp; &quot;% &#3588;&#3636;&#3604;&#3648;&#3611;&#3655;&#3609;&#3648;&#3591;&#3636;&#3609;&#3592;&#3635;&#3609;&#3623;&#3609; = &quot; &amp; calculatedDiscount" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;&#3652;&#3617;&#3656;&#3617;&#3637;&#3626;&#3656;&#3623;&#3609;&#3621;&#3604;&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

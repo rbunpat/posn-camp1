@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 04:03:19 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzo1OTo0OSBQTTszMjI3"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswNDowMzoxOSBQTTsxOzMzMjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Price&quot;" newline="True"/>
+            <input variable="price"/>
+            <if expression="price &gt; 4999">
+                <then>
+                    <output expression="&quot;Price of VAT 3% = &quot; &amp; (price*3)/100" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Price of VAT 7% = &quot; &amp; (price*7)/100" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
