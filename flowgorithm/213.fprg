@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 03:39:38 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzoyODozOSBQTTszMjIy"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzozOTozOCBQTTsxOzMzMzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="workScore, midtermScore, finalScore, totalScore" type="Integer" array="False" size=""/>
+            <input variable="workScore"/>
+            <input variable="midtermScore"/>
+            <input variable="finalScore"/>
+            <assign variable="totalScore" expression="workScore + midtermScore + finalScore"/>
+            <if expression="totalScore &gt;= 80">
+                <then>
+                    <output expression="&quot;Grade = A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="totalScore &gt;= 75">
+                        <then>
+                            <output expression="&quot;Grade = B+&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="totalScore &gt;= 70">
+                                <then>
+                                    <output expression="&quot;Grade = B&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="totalScore &gt;= 65">
+                                        <then>
+                                            <output expression="&quot;Grade = C+&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="totalScore &gt;= 60">
+                                                <then>
+                                                    <output expression="&quot;Grade = C&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="totalScore &gt;= 55">
+                                                        <then>
+                                                            <output expression="&quot;Grade = D+&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="totalScore &gt;= 50">
+                                                                <then>
+                                                                    <output expression="&quot;Grade = D&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Grade = F&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

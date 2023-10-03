@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 03:26:16 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzoyNDoyNCBQTTszMjEy"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzoyNjoxNiBQTTsyOzMzMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="score" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3611;&#3657;&#3629;&#3609;&#3588;&#3632;&#3649;&#3609;&#3609;&quot;" newline="True"/>
+            <input variable="score"/>
+            <if expression="score &gt; 4">
+                <then>
+                    <output expression="&quot;&#3588;&#3640;&#3603;&#3626;&#3629;&#3610;&#3612;&#3656;&#3634;&#3609;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#3588;&#3640;&#3603;&#3626;&#3629;&#3610;&#3652;&#3617;&#3656;&#3612;&#3656;&#3634;&#3609;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -4,21 +4,21 @@ c = int(input())
 
 grade = a + b + c
 
-if 80 <= grade <= 100:
+if 80 <= grade:
     print("A")
-elif 75 <= grade <= 79:
+elif 75 <= grade:
     print("B+")
-elif 70 <= grade <= 74:
+elif 70 <= grade:
     print("B")
-elif 65 <= grade <= 69:
+elif 65 <= grade:
     print("C+")
-elif 60 <= grade <= 64:
+elif 60 <= grade:
     print("C")
-elif 55 <= grade <= 59:
+elif 55 <= grade:
     print("D+")
-elif 50 <= grade <= 54:
+elif 50 <= grade:
     print("D")
-elif 0 <= grade <= 49:
+elif 0 <= grade:
     print("F")
 else:
     print("Invalid Input")

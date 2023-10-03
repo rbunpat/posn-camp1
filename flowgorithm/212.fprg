@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 03:28:38 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzoyNjoyNSBQTTszMjE1"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzoyODozOCBQTTsxOzMzMjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Num A&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter Num B&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a &gt; b">
+                <then>
+                    <output expression="&quot;Total = &quot; &amp; a - b" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Total = &quot; &amp; b - a" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
