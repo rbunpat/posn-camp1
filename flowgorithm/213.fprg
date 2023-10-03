@@ -4,16 +4,19 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="POSNWindows"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-10-03 03:39:38 PM"/>
+        <attribute name="saved" value="2023-10-03 03:43:48 PM"/>
         <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzoyODozOSBQTTszMjIy"/>
-        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzozOTozOCBQTTsxOzMzMzE="/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMzo0Mzo0OCBQTTsyOzMzMjg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="workScore, midtermScore, finalScore, totalScore" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Score&quot;" newline="True"/>
             <input variable="workScore"/>
+            <output expression="&quot;Enter Midterm&quot;" newline="True"/>
             <input variable="midtermScore"/>
+            <output expression="&quot;Enter Final&quot;" newline="True"/>
             <input variable="finalScore"/>
             <assign variable="totalScore" expression="workScore + midtermScore + finalScore"/>
             <if expression="totalScore &gt;= 80">
