@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 02:15:27 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjowODowOCBQTTszMjE1"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjowOTowNyBQTTsxO1BPU05XaW5kb3dzO1BPU05XSU5ET1dTOzIwMjMtMTAtMDM7MDE6NDA6MDIgUE07NjU4Ng=="/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjoxNToyNyBQTTszOzMzMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numX, numY, numZ" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Num X&quot;" newline="True"/>
+            <input variable="numX"/>
+            <output expression="&quot;Enter Num Y&quot;" newline="True"/>
+            <input variable="numY"/>
+            <output expression="&quot;Enter Num Z&quot;" newline="True"/>
+            <input variable="numZ"/>
+            <output expression="&quot;Average x, y, z = &quot; &amp; (numX+numY+numZ)/3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

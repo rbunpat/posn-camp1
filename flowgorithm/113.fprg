@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 02:15:12 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjoxMTo1MiBQTTszMjA4"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjoxNToxMiBQTTsyOzMzMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, height" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Base&quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;Enter Height&quot;" newline="True"/>
+            <input variable="height"/>
+            <output expression="&quot;Area = &quot; &amp; 0.5*base*height" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="POSNWindows"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 02:08:06 PM"/>
+        <attribute name="created" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMTo0MDowMiBQTTszMjA0"/>
+        <attribute name="edited" value="UE9TTldpbmRvd3M7UE9TTldJTkRPV1M7MjAyMy0xMC0wMzswMjowODowNiBQTTsxOzMzMjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="age, currentYear" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#3594;&#3639;&#3656;&#3629;&#3586;&#3629;&#3591;&#3588;&#3640;&#3603; &#3588;&#3639;&#3629;&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;&#3629;&#3634;&#3618;&#3640;&#3586;&#3629;&#3591;&#3588;&#3640;&#3603; &#3588;&#3639;&#3629;&quot;" newline="True"/>
+            <input variable="age"/>
+            <output expression="&quot;&#3611;&#3637; &#3614;.&#3624;. &#3611;&#3633;&#3592;&#3592;&#3640;&#3610;&#3633;&#3609; &#3588;&#3639;&#3629;&quot;" newline="True"/>
+            <input variable="currentYear"/>
+            <output expression="&quot;&#3626;&#3623;&#3633;&#3626;&#3604;&#3637; &#3588;&#3640;&#3603; &quot; &amp; name &amp; &quot; &#3611;&#3637; &#3588;.&#3624;. &#3586;&#3629;&#3591;&#3588;&#3640;&#3603;&#3588;&#3639;&#3629; &#3611;&#3637; &quot; &amp; currentYear - 543 - age" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
