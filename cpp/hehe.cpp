@@ -3,9 +3,9 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main ()
 {
-    float a = 22/7;
-    cout << fixed << setprecision(5);
+    int a = 5;
+    cout << a;
     return 0;
 }
