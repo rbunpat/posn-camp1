@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
     cin >> height;
     height = height / 100;
     bmi = weight / (height * height);
-    cout << "Hi : " << name << "BMI = " << bmi << endl;
+    cout << "Hi : " << name << " BMI = " << bmi << endl;
     // int x, y, z;
     // cin >> x >> y >> z;
     // cout << x * (2 + 5) << endl;
