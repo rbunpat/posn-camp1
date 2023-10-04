@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello :)\n";
-    cout << "Rachatat\n";
-    return 0;
+    int number1 = 100;
+    string name = "Rachatat";
+    cout << number1 << endl;
+    cout << name << endl;
 }
