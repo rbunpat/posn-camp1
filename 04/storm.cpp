@@ -22,20 +22,28 @@ int main()
     stormVelocity = k / h;
 
     
-    if (stormVelocity >= 32.78)
+    if (stormVelocity > 32.78)
     {
         stormType = "Hurricane";
+        cout << fixed << setprecision(2) << stormVelocity << endl;
     }
-    else if (stormVelocity >= 17.50 && stormVelocity < 32.78)
-    {
-        stormType = "Tropical Depression";
-    }
-    else
+    else if (stormVelocity >= 17.50 && stormVelocity <= 32.78)
     {
         stormType = "Tropical Storm";
+        cout << fixed << setprecision(2) << stormVelocity << endl;
+    }
+    else if (stormVelocity < 17.50)
+    {
+        stormType = "Tropical Depression";
+        
+        if (stormVelocity < 10) {
+            cout << fixed << setprecision(2) << stormVelocity << endl;
+        } else {
+            cout << fixed << setprecision(2) << stormVelocity << endl;
+        }
     }
 
-    cout << setprecision(4) << stormVelocity << endl;
+
     cout << stormType;
 
     return 0;
