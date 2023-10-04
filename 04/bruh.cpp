@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     // cin >> height;
     // area = width * height;
     // cout << "Area is: " << area << endl;
-    //calculate the bmi
+    // calculate the bmi
     double weight, height, bmi;
     string name;
     cout << "Enter your name: ";
