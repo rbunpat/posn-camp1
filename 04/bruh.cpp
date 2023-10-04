@@ -4,13 +4,25 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int width, height, area;
-    cout << "Enter width: ";
-    cin >> width;
-    cout << "Enter height: ";
+    // int width, height, area;
+    // cout << "Enter width: ";
+    // cin >> width;
+    // cout << "Enter height: ";
+    // cin >> height;
+    // area = width * height;
+    // cout << "Area is: " << area << endl;
+    //calculate the bmi
+    double weight, height, bmi;
+    string name;
+    cout << "Enter your name: ";
+    cin >> name;
+    cout << "Enter your weight: ";
+    cin >> weight;
+    cout << "Enter your height: ";
     cin >> height;
-    area = width * height;
-    cout << "Area is: " << area << endl;
+    height = height / 100;
+    bmi = weight / (height * height);
+    cout << "Hi : " << name << "BMI = " << bmi << endl;
     // int x, y, z;
     // cin >> x >> y >> z;
     // cout << x * (2 + 5) << endl;
