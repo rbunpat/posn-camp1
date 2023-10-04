@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
     // cout << bruh << endl;
 
     int x = 100, y = 100;
-    bool result = x == y;
+    bool result = x != y;
     cout << result << endl;
     return 0;
 }
