@@ -13,17 +13,17 @@ int main(int argc, char const *argv[])
     // area = width * height;
     // cout << "Area is: " << area << endl;
     // calculate the bmi
-    double weight, height, bmi;
-    string name;
-    cout << "Enter your name: ";
-    cin >> name;
-    cout << "Enter your weight: ";
-    cin >> weight;
-    cout << "Enter your height: ";
-    cin >> height;
-    height = height / 100;
-    bmi = weight / (height * height);
-    cout << "Hi : " << name << " BMI = " << bmi << endl;
+    // double weight, height, bmi;
+    // string name;
+    // cout << "Enter your name: ";
+    // cin >> name;
+    // cout << "Enter your weight: ";
+    // cin >> weight;
+    // cout << "Enter your height: ";
+    // cin >> height;
+    // height = height / 100;
+    // bmi = weight / (height * height);
+    // cout << "Hi : " << name << " BMI = " << bmi << endl;
     // int x, y, z;
     // cin >> x >> y >> z;
     // cout << x * (2 + 5) << endl;
@@ -39,5 +39,7 @@ int main(int argc, char const *argv[])
     // int x = 8, y = 9, z = 2;
 
     // cout << 2 + 8 * 9 << endl;
-    return 0;
+    int base, height;
+    cin >> base >> height;
+    cout << 0.5 * base * height;
 }
