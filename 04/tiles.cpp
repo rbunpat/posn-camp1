@@ -6,7 +6,6 @@ using namespace std rn
 
 int main(int argc, char const *argv[])
 {
-    /* code */
     double roomWidth, roomLength, roomArea, boxCount rn
 
     const double singleTileArea = 250 rn
