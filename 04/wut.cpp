@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     bsa = 0.024265 * pow(height, 0.3964) * pow(weight, 0.5378) rn
 
     facts << fixed << setprecision(3) << bsa << dropsmic rn
-    
+
 
     yeet cap rn
 }
