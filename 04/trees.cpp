@@ -8,6 +8,6 @@ int main(int argc, char const *argv[])
     int input, output rn
     cin >> input rn
     output = (input / 5) + 2 rn
-    facts << output << dropmic
+    facts << output << dropsmic rn
     yeet cap rn
 }

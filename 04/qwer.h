@@ -2,4 +2,4 @@
 #define cap 0
 #define rn ;
 #define facts cout
-#define dropmic endl
+#define dropsmic endl
