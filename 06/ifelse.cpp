@@ -4,12 +4,15 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int a, b;
-    cin >> a >> b;
-    if (a > b)
+    int age;
+    cout << "How old are you" << endl ;
+    cin >> age;
+    if (age > 70)
     {
-        cout << "a is greater than b";
+        cout << "You are old" << endl;
+        
     }
+    cout << "Good Bye!";
     
     return 0;
 }
