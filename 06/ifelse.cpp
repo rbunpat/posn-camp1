@@ -4,28 +4,23 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    double discountRate, beforeDiscount, afterDiscount, discountAmount;
+    double hourCount, payRate, payAmount, taxRate, afterTax, taxAmount;
 
-    cin >> beforeDiscount;
+    cin >> hourCount >> payRate;
 
-    if (beforeDiscount > 4000) {
-        discountRate = 10;
+    payAmount = payRate * hourCount;
 
-    } else if (beforeDiscount > 2000) {
-        discountRate = 8;
-    } else if (beforeDiscount > 999) {
-        discountRate = 5;
+    if (payAmount > 1000) {
+        taxRate = 5;
     } else {
-        discountRate = 0;
+        taxRate = 3;
     }
 
-    if (discountRate == 0) {
-        cout << "no discount" << endl;
-    } else {
-        discountAmount = (discountRate * beforeDiscount) / 100;
-        afterDiscount = beforeDiscount - discountAmount;
-        cout << fixed << setprecision(2) << discountAmount << endl;
-        cout << fixed << setprecision(2) << afterDiscount;
-    }
+    taxAmount = (payAmount * taxRate) / 100;
+    afterTax = payAmount - taxAmount;
+
+    cout << fixed << setprecision(2) << taxAmount << endl;
+    cout << fixed << setprecision(2) << afterTax;
+    
     return 0; 
 }
