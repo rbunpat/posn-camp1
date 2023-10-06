@@ -4,14 +4,24 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int a, b;
-    cin >> a >> b;
+    double beforeVat, afterVat, vatAmount;
+    int vatRate;
 
-    if (a > b) {
-        cout << a - b ;
+    cin >> beforeVat;
+
+    if (beforeVat >= 5000) {
+        vatRate = 3;
     } else {
-        cout << b - a ;
+        vatRate = 7;
     }
+
+    vatAmount = (beforeVat * vatRate) / 100;
+
+    afterVat = beforeVat - vatAmount;
+
+    cout << fixed << setprecision(2) << vatAmount << endl;
+    cout << fixed << setprecision(2) << afterVat << endl;
+
     
     return 0;
 }
