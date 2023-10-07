@@ -11,12 +11,17 @@ int main() {
     maxSide = max(maxSide, side3);
 
 
-
-    if (side1 + side2 > maxSide) {
+    //check if is a triangle
+    if (side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2) {
         cout << "yes";
     } else {
         cout << "no";
     }
+    // if (side1 + side2 > side3 || side2 + side3 > side1 || side1 + side3 > side2) {
+    //     cout << "yes";
+    // } else {
+    //     cout << "no";
+    // }
 
     // maxSide = max(side1, side2);
     // maxSide = max(maxSide, side3);
