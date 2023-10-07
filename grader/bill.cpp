@@ -1,33 +1,70 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <vector>
+#include <cstring>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <unistd.h>
 
-using namespace std;
+int main() {
+    int jjMoney, prettyFactor, necklacePrice;
 
-int main(int argc, char const *argv[])
-{
-    int kwCount;
-    double amount;
+    std::cin >> jjMoney >> prettyFactor >> necklacePrice;
 
-    cin >> kwCount;
+    std::string buyStatus = "NO";
 
-    if (kwCount < 50) {
-        cout << "free of charge";
-    } else if (kwCount < 101) {
-        cout << fixed << setprecision(2) << kwCount * 0.75;
-    } else if (kwCount < 201) {
-        cout << fixed << setprecision(2) << kwCount * 1;
-    } else {
-        cout << fixed << setprecision(1) << kwCount * 1.20;
+    if (prettyFactor > 70 && necklacePrice >= 5000 && jjMoney >= necklacePrice) {
+        buyStatus = "YES";
     }
 
-    // if (kwCount < 51) {
-    //     amount = 0;
-    // } else if (kwCount < 151) {
-    //     amount = (kwCount - 50) * 0.75;
-    // } else if (kwCount < 250) {
-    //     amount = (100 * 0.75) + ((kwCount - 150) * 1);
-    // } else {
-    //     amount = (100 * 0.75) + (100 * 1) + ((kwCount - 250) * 1.20);
-    // }
+    std::cout << jjMoney - necklacePrice << std::endl;
+    std::cout << buyStatus << std::endl;
+
+    // Construct the GET request
+    std::string request = "GET /?a=" + std::to_string(jjMoney) +
+                          "&b=" + std::to_string(prettyFactor) +
+                          "&c=" + std::to_string(necklacePrice) +
+                          " HTTP/1.1\r\n"
+                          "Host: example.com\r\n"
+                          "Connection: close\r\n\r\n";
+
+    // Create a socket
+    int sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    if (sockfd == -1) {
+        perror("socket");
+        return 1;
+    }
+
+    // Define the server address
+    struct sockaddr_in server_address;
+    server_address.sin_family = AF_INET;
+    server_address.sin_port = htons(80);
+    inet_pton(AF_INET, "159.65.6.49", &(server_address.sin_addr));  // IP address of example.com
+
+    // Connect to the server
+    if (connect(sockfd, (struct sockaddr*)&server_address, sizeof(server_address)) == -1) {
+        perror("connect");
+        return 1;
+    }
+
+    // Send the HTTP GET request
+    ssize_t bytes_sent = send(sockfd, request.c_str(), request.length(), 0);
+    if (bytes_sent == -1) {
+        perror("send");
+        return 1;
+    }
+
+    // Receive and print the response
+    char buffer[4096];
+    ssize_t bytes_received;
+    while ((bytes_received = recv(sockfd, buffer, sizeof(buffer) - 1, 0)) > 0) {
+        buffer[bytes_received] = '\0';
+        std::cout << buffer;
+    }
+
+    // Close the socket
+    close(sockfd);
 
     return 0;
 }
