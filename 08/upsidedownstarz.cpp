@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    int i, n;
+    cin >> n;
+
+    for (i = n; i >= 1; i--) {
+        cout << string(i, '*') << endl;
+    }
+
+    return 0;
+}
