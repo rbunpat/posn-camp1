@@ -7,8 +7,8 @@ int main() {
 
     cin >> numberCount;
 
-    currentMin = 99999;
-    currentMax = 0;
+    currentMin = INT_MAX;
+    currentMax = INT_MIN;
 
     for (i = 1; i <= numberCount; i++) {
         cin >> numberInput;
