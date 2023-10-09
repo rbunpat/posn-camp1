@@ -7,11 +7,24 @@ int main() {
 
     cin >> startNum >> endNum >> interval;
 
+    if (startNum == endNum) {
+        cout << "N/A";
+        return 0;
+    }
+
     while (startNum <= endNum)
     {
         cout << startNum << " ";
         startNum += interval;
     }
+
+    while (startNum >= endNum)
+    {
+        cout << startNum << " ";
+        startNum -= interval;
+    }
+
+
     
 
 
