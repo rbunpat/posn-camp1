@@ -13,7 +13,7 @@ int main() {
     cin >> checkLetter;
 
     for (int i = 0; i < sentence.length(); i++) {
-        if (char(sentence[i]) == checkLetter) {
+        if (char (sentence[i]) == checkLetter) {
             letterCount ++ ;
         }
     }
