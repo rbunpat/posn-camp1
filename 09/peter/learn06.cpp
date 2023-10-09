@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-    double average = 0, number = 0, numberCount = 0, numberCountSave = 0, maxNumber = -9999, minNumber = 9999;
+    double average = 0, number = 0, numberCount = 0, numberCountSave = 0, maxNumber = INT_MIN, minNumber = INT_MAX;
 
     cin >> numberCount;
 
