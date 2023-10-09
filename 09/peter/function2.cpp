@@ -12,7 +12,7 @@ int main() {
     } else if (a > b) {
         cout << fixed << setprecision(2) << a << " greater than " << b;
     } else {
-        cout << fixed << setprecision(2) << a << " equal to " << b;
+        cout << fixed << setprecision(2) << a << " equal " << b;
     }
 
     return 0;
