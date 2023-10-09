@@ -18,7 +18,7 @@ int main() {
             if (retryCount == 2) {
                 break;
             }
-            cout << "Try Again";
+            cout << "Try Again"<< endl;
             retryCount++;
         }
     }
