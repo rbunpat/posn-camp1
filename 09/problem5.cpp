@@ -15,9 +15,9 @@ int main() {
     totalScore = score1 + score2;
 
     if (totalScore >= 50) {
-        cout << "Pass" << endl;
+        cout << totalScore << " Pass" << endl;
     } else {
-        cout << "Fail" << endl;
+        cout << totalScore << " Fail" << endl;
     }
 
 
