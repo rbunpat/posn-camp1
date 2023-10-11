@@ -16,7 +16,8 @@ int main() {
 
     cout << charCount << endl;
 
-
+// fg 406fdg5h4 dfg6 h
+// 10
 
 
     return 0;
