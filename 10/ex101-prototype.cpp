@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+float sendPi();
+
+main()
+{
+
+    cout << SendPi();
+}
+
+float SendPi()
+{
+    float P;
+    P = 22.0 / 7.0;
+    return P;
+}
