@@ -18,5 +18,7 @@ int main() {
         }
     }
 
+    cout << letterCount << endl;
+
     return 0;
 }
