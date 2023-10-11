@@ -11,8 +11,7 @@ void checkHex(string s)
 		char ch = s[i]; 
         ch = toupper(ch);
 
-		if ((ch < '0' || ch > '9') && 
-			(ch < 'A' || ch > 'F')) 
+		if ((ch < '0' || ch > '9') && (ch < 'A' || ch > 'F')) 
 		{ 
 			cout << "Invalid" << endl; 
 			return; 
