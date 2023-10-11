@@ -12,9 +12,6 @@ int main() {
         if (isalpha(sentence[i])) {
             charCount++;
         }
-        // } else if (isdigit(sentence[i])){
-        //     charCount ++;
-        // }
     }
 
     cout << charCount << endl;
