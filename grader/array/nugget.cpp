@@ -35,6 +35,9 @@ int main() {
         if (a[i]) {
             cout << i << endl;
         }
+        if (i == n) {
+            return 0;
+        }
     }
 
     return 0;
