@@ -22,7 +22,7 @@ int main() {
     for (int i = 0; i < text2.length(); i++) {
         joined[i + text1.length()] = txt2[i];
     }
-    
+     
     cout << "Joined: ";
     for (int i = 0; i < text1.length() + text2.length(); i++) {
         cout << joined[i];
