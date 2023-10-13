@@ -2,22 +2,21 @@
 
 using namespace std;
 
-int main() {
-    int n;
+int f[36];
 
+int main() {
+    
+    f[1] = f[2] = 1;
+
+    for (int i = 3; i <= 35; i++) {
+        f[i] = f[i - 1] + f[i - 2];
+    }
+
+    int n;
     cin >> n;
 
-    int a = 0, b = 1, c, i;
-    if (n == 0) {
-        cout << 0;
-    }
-    for (i = 2; i <= n; i++) {
-        c = a + b;
-        a = b;
-        b = c;
-    }
+    cout << f[n];
 
-    cout << b;
 
     return 0;
 }
