@@ -4,7 +4,8 @@ using namespace std;
 
 int main() {
     string originalString;
-    getline(cin, originalString);
+    // getline(cin, originalString);
+    cin >> originalString;
 
     string newString = "";
 
