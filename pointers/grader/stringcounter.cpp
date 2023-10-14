@@ -13,17 +13,17 @@ int main() {
     for (int i = 0; i < originalString.length(); i++) {
         bool isUnique = true;
         for (int j = 0; j < newString.length(); j++) {
-            if (originalString[i] == newString[j] && isalpha(originalString[i]) && originalString[i] != ' ') {
+            if (originalString[i] == newString[j] && originalString[i] != ' ') {
                 isUnique = false;
                 break;
             }
         }
-        if (isUnique) {
+        if (isUnique && originalString[i] != ' ') {
             newString += originalString[i];
         }
     }
 
-    cout << newString << endl;
+    // cout << newString << endl;
 
     for (int k = 0; k < newString.length(); k++) {
         int count = 0;
