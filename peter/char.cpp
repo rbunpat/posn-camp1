@@ -16,6 +16,8 @@ int main() {
         }
     } while (i < n);
 
+    sort(str, str + n);
+
     for (int i = 0; i < n; i++) {
         cout << str[i] << " ";
     }
