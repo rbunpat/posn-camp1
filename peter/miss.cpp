@@ -8,11 +8,13 @@ int main() {
     int sum1 = 0;
     int sum2 = 0;
 
-    for (int step = 0; step < sizeof(arr); step++) {
+    int arraySize = sizeof(arr) / sizeof(arr[0]);
+
+    for (int step = 0; step < arraySize; step++) {
         cin >> arr[step];
     }
 
-    for (int step = 0; step < sizeof(arr); step++) {
+    for (int step = 0; step < arraySize; step++) {
         if (arr[step] % 2 == 0) {
             sum1 += arr[step];
         } else {
@@ -20,7 +22,7 @@ int main() {
         }
     }
 
-    for (int i = 0; i < sizeof(arr); i++) {
+    for (int i = 0; i < arraySize; i++) {
         if (arr[i] > 0) {
             sum1 += arr[i];
         }
@@ -33,7 +35,7 @@ int main() {
     cout << sum << endl;
     cout << sum1 << endl;
     cout << sum2 << endl;
-    
+
     
 
 
