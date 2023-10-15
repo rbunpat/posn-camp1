@@ -30,9 +30,7 @@ int main() {
             if (height[j] < height[j + 1]) {
                 swap(height[j], height[j + 1]);
             }
-        }
-
-        if (i < heightCount - 1) {
+                    if (i < heightCount - 1) {
             cout << i << "  ";
         }
         
@@ -40,6 +38,9 @@ int main() {
         for (auto bruh: height) {
             cout << fixed << setprecision(2) << bruh << "  ";
         }
+        }
+
+
         cout << endl;
     }
 
