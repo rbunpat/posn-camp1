@@ -44,9 +44,9 @@ int main() {
 
 
     if (medianHeightA > medianHeightB) {
-        cout << heightsA[heightsASize];
+        cout << "A " << heightsA[heightsASize - 1];
     } else {
-        cout << heightsB[heightsBSize];
+        cout << "B " << heightsB[heightsBSize - 1];
     }
 
 
