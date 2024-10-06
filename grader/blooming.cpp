@@ -9,7 +9,7 @@ int main() {
 
     string buyStatus = "NO";
 
-    if (prettyFactor > 70 && necklacePrice >= 5000 & jjMoney >= necklacePrice) {
+    if (prettyFactor > 70 && necklacePrice >= 5000 && jjMoney >= necklacePrice) {
         buyStatus = "YES";
     }
 
