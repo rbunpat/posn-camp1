@@ -6,7 +6,6 @@ int main() {
     int jjMoney, prettyFactor, necklacePrice;
 
     cin >> jjMoney >> prettyFactor >> necklacePrice;
-    //add get request here, get example.com?a=jjmoney&b=prettyfactor&c=necklaceprice
 
     string buyStatus = "NO";
 
